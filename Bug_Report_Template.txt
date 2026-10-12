@@ -1,0 +1,37 @@
+ITUS102 - PRACTICAL EXAMINATION | DEBUGGING AND IMPLEMENTATION REPORT
+Date: 12-10-2026 | Task 02 - Campus Canteen Order Calculator
+
+Enrollment No.:26CE056
+Name:Akshat Rajeshbhai Patel
+
+SIMPLE BUGS (write a brief explanation for each)
+Bug | Original problem | Correction made | Why required
+S1  |        Navigation link target was misspelled as #calcuator.                                     | Changed it to #calculator.                                   |The href must match the calculator section ID.
+S2  |The bottom information area used a generic container.                                            | Used the semantic <footer> element and preserved the content.| Footer is the appropriate semantic HTML5 element.
+S3  | The supplied CSS background declaration was already valid: background-color: #f5f5f5;.        | Kept the valid declaration.                                  | A colon separates a CSS property from its value; the supplied line already follows this syntax.                  |                 |
+S4  | The .pageTitle class selector did not match the HTML id="pageTitle".                            | Changed the selector to #pageTitle.                          | An ID selector beginning with # matches the HTML id.                 |                 |
+S5  |  The subtotal must be price multiplied by quantity.                                             | Used unitPrice * quantity.                                   | Multiplication calculates the actual subtotal.
+S6  | The service charge must be 5% of subtotal.                                                      | Used subtotal * 0.05.                                        | 0.05 represents 5 percent.                 |                 |
+S6  |  The service charge must be 5% of subtotal.                                                     | Used subtotal * 0.05.                                        | 0.05 represents 5 percent.                |                 |
+
+CODE COMPLETION / IMPLEMENTATION (briefly state what was completed)
+M1: Added UTF-8 charset and responsive viewport metadata.
+M2: Added an aside with class="notice", the heading "Important Note", and a reminder to check input values.
+M3: Used display: flex and justify-content: space-between for navigation links.
+M4: Used CSS Grid with two equal-width columns.
+M5: Added a media query at 600px and below to stack the cards and make navigation vertical.
+M6: Implemented calculateDiscount(amount, percentage) as amount * percentage / 100.
+D1: Implemented getRate(type) using if-else: Student = 10, Staff = 5, Visitor = 0.
+D2: Implemented calculateTotal(subtotal, discount, serviceCharge) as subtotal - discount + serviceCharge.
+D3: Implemented buildBreakdown(unitPrice, quantity) with a for loop to show running item costs.
+
+FUNCTIONAL TEST
+Test input: Price ₹100; quantity 3; Student.
+Expected result: Subtotal ₹300; discount ₹30; service charge ₹15; payable ₹285; running item cost at item 3 = ₹300.
+Observed result: Record after running index.html in a browser.
+Desktop layout checked (Yes/No): Record after testing.
+Mobile layout checked (Yes/No): Record after testing at 600px or below.
+
+GIT VERSION CONTROL
+git log -1 --oneline output:
+GitHub URL (if available):
