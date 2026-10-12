@@ -33,5 +33,5 @@ Desktop layout checked (Yes/No): Record after testing.
 Mobile layout checked (Yes/No): Record after testing at 600px or below.
 
 GIT VERSION CONTROL
-git log -1 --oneline output:
-GitHub URL (if available):
+git log -1 --oneline output:24a4099 Complete campus canteen calculator practical
+GitHub URL (if available):https://github.com/26CE056-AkshatPatel/Campus-Canteen-Order-Calculator.
